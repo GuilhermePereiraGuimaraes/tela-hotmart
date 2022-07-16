@@ -68,13 +68,13 @@ main{
     gap: 10px;
 }
 #user .login .user-datas h2{
-    font-size: 15px;
+    font-size: 18px;
     color: #707780;
 }
 #user .login .user-datas input{
     width: 100%;
     border: none;
-    font-size: 24px;
+    font-size: 23px;
     color: #191c1f;
     padding: 10px;
 }
@@ -170,6 +170,9 @@ footer ul li a:hover{
     #user{
         min-width: none;
         width: 100%;
+    }
+    #user .logo img{
+        align-self: center;
     }
     #background{
         display: none;
