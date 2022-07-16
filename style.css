@@ -171,7 +171,7 @@ footer ul li a:hover{
         min-width: none;
         width: 100%;
     }
-    #user .logo img{
+    #user .logo{
         align-self: center;
     }
     #background{
