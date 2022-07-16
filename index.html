@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotmart</title>
+    <link rel="shortcut icon" href="images/logo-hotmart-icone-1024.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="user">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Hotmart-site.png" alt="">
+                </a>
+            </div>
+            <div class="login">
+                <a href="#" class="facebook input" >
+                    <img src="images/facebook-icon-white.webp" alt="">
+                    Entrar com Facebook
+                </a>
+                <div class="input user-datas">
+                    <h2>@</h2>
+                    <input type="email" name="email" id="email"  placeholder="Seu email ou usuário">
+                </div>
+                <div class="input user-datas">
+                    <h2>&#x1F511</h2>
+                    <input type="password" name="password" id="password"  placeholder="Sua senha">
+                    <h2 class="eye" onclick="closeEye()">&#x1F441</h2>
+                </div>
+                <a href="" class="forget-password">Esqueci minha senha</a>
+            </div>
+            <div class="enter">
+                <a href="#" class="input btn-enter">
+                    Entrar
+                </a>
+                <p>Não tem conta? <span><a href="#">Criar aqui</a></span></p>
+            </div>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos de uso</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <div id="background">
+        </div>
+    </main>
+
+    <script>
+        function closeEye(){
+            let password = document.getElementById("password")
+            let eye = document.getElementsByClassName('eye')[0]
+            if (password.type == "password") {
+                password.type = "text"
+                eye.classList.add('show')
+            } else {
+                password.type = "password"
+                eye.classList.remove('show')
+            }
+        }
+    </script>
+</body>
+</html>
